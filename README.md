@@ -1,36 +1,125 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📄 ResumeMate - PDF Generator
 
-## Getting Started
+#### Live Website: [https://pdf-generator-vert-omega.vercel.app/](https://pdf-generator-vert-omega.vercel.app/)
 
-First, run the development server:
+## Screenshots
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+![alt text](image.png)
+
+![alt text](image-1.png)
+
+![alt text](image-2.png)
+
+![alt text](image-3.png)
+
+![alt text](image-4.png)
+## ✨ Features
+
+- 📝 **Interactive Form**: Clean, user-friendly interface for entering resume details
+- 👁️ **Live Preview**: See your resume before downloading
+- 📱 **Responsive Design**: Works perfectly on all devices
+- ✅ **Form Validation**: Real-time validation with helpful error messages
+- 🎨 **Beautiful UI**: Modern design with gradient buttons and custom icons
+- ⚡ **Instant PDF Generation**: Client-side PDF creation using jsPDF
+- 💾 **One-Click Download**: Download your resume with a single click
+
+
+## 🛠️ Tech Stack
+
+- **Framework**: [Next.js 15.4.5](https://nextjs.org/) ⚛️
+- **Language**: [TypeScript](https://www.typescriptlang.org/) 📘
+- **Styling**: CSS Modules 🎨
+- **PDF Generation**: [jsPDF 2.5.2](https://github.com/parallax/jsPDF) 📄
+- **Icons**: Custom SVG Icons 🎯
+- **Validation**: Custom form validation ✅
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js 18+ 📦
+- npm or yarn 🧶
+
+### Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/skp3214/pdf-generator.git
+   cd pdf-generator
+   ```
+
+2. **Install dependencies**
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
+
+3. **Run the development server**
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
+
+4. **Open your browser**
+   Navigate to [http://localhost:3000](http://localhost:3000) 🌐
+
+## 📋 Usage
+
+1. **Fill in your details** 📝
+   - Name (required)
+   - Email (required, valid format)
+   - Phone Number (required, minimum 10 digits)
+   - Position
+   - Description
+
+2. **Preview your resume** 👁️
+   - Click "View PDF" to see a preview
+   - Review your information before downloading
+
+3. **Download your PDF** 💾
+   - Click "Download PDF" to save your resume
+   - File will be saved as `[YourName].pdf`
+
+## 🎯 Form Validation
+
+The application includes comprehensive validation:
+
+- ✅ **Name**: Required field
+- ✅ **Email**: Required + valid email format
+- ✅ **Phone**: Required + minimum 10 digits
+- 🔄 **Real-time validation**: Errors clear as you type
+- 🚫 **Prevents submission**: Won't generate PDF until all required fields are valid
+
+## 📁 Project Structure
+
+```
+pdf-generator/
+├── 📂 app/
+│   ├── 🎨 globals.css
+│   ├── 🏠 layout.tsx
+│   ├── 📄 page.tsx (Main component)
+│   └── 🎨 page.module.css
+├── 📂 components/
+│   └── 🎯 Icon.tsx (Custom icon component)
+├── 📂 public/
+│   └── 📂 icons/ (SVG icon files)
+├── 📂 types/
+│   └── 📄 html2pdf.d.ts
+├── ⚙️ next.config.ts
+├── 📦 package.json
+└── 📖 README.md
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## 🎨 Design Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- **Green Gradient Buttons**: Eye-catching call-to-action buttons
+- **Horizontal Layout**: Information displays side-by-side for better readability
+- **Custom Icons**: Professional SVG icons for each field
+- **Error Styling**: Clear visual feedback for validation errors
+- **Responsive Design**: Adapts to different screen sizes
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
 
-To learn more about Next.js, take a look at the following resources:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
